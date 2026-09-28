@@ -8,6 +8,8 @@ The lane-detection assignment is one example. The program processes a road image
 
 This image is a saved result from the assignment, not a new benchmark run.
 
+The local versions of the [gear-detection lab](LAB/DLIP_LAB1/DLIP_LAB1_21800275_SangheonPark.cpp) and [lane-image lab](LAB/DLIP_LAB3/DLIP_LAB3_21800275_SangheonPark_image.py) were incorporated on 28 September 2026. The Python file passed a syntax check; no new image-processing benchmark was run.
+
 ## Building
 
 The [OpenCV property sheet](Props/opencv-4.11.0_release_x64.props) records the original Windows/OpenCV 4.11 setup. Library paths need to be adjusted for another machine. A full rebuild has not been performed during this documentation update.

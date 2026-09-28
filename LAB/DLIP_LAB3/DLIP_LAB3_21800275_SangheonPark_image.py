@@ -8,7 +8,7 @@ Language/ver	: Python
 Course		: Deep Learning & Image Processing
 
 Description     : DLIP_LAB3_21800275_SangheonPark.cpp
-
+=
 """
 
 import numpy as np
