@@ -1,23 +1,39 @@
 # Image Processing Labs
 
-![Image Processing Labs overview](assets/portfolio-cover.png)
+**OpenCV coursework connecting image-processing code with visible output, led by a lane-detection assignment.**
 
-A course archive of image-processing assignments, tutorials and image assets, with lane-detection work as a concrete entry point.
+![From road image to lane centre.](assets/readme-overview.png)
 
-[Portfolio home](https://github.com/oldprize47-SH) · [Original repository](https://github.com/oldprize47/DLIP_2025)
+[What I built](#what-i-built) · [My role](#my-role) · [Code and reproduction](#code-and-reproduction) · [Portfolio](https://github.com/oldprize47-SH)
 
-## Contribution and context
+## What I built
+
+| Deliverable | What it does | Explore |
+|---|---|---|
+| **Lane detector** | Main assignment implementation | [Source / result](Assignment/Assignment_Line_Detection/DLIP_Assignment_21800275_SangheonPark.cpp) |
+| **Recorded result** | Lane-centre output from the archive | [Source / result](Assignment/Assignment_Line_Detection/Lane_center.jpg) |
+| **Course helpers** | Supporting image-processing routines | [Source / result](Include/TU_DLIP.cpp) |
+
+### Result at a glance
+
+Recorded output is included below. No fresh full rebuild or detection benchmark was run.
+
+![Recorded lane-centre output](Assignment/Assignment_Line_Detection/Lane_center.jpg)
+
+## My role
 
 This is my coursework archive, including course-provided scaffolding and supporting material. The entire tree is not original research or solely authored production code. The final GazeMouse project has its own focused portfolio fork.
 
-## Code map
+## How it works
 
-| Entry | Purpose |
-|---|---|
-| [Assignment/Assignment_Line_Detection/DLIP_Assignment_21800275_SangheonPark.cpp](Assignment/Assignment_Line_Detection/DLIP_Assignment_21800275_SangheonPark.cpp) | Lane-detection assignment |
-| [Assignment/Assignment_Line_Detection/Lane_center.jpg](Assignment/Assignment_Line_Detection/Lane_center.jpg) | Recorded lane-centre example |
-| [Include/TU_DLIP.cpp](Include/TU_DLIP.cpp) | Course image-processing helpers |
-| [Props/opencv-4.11.0_release_x64.props](Props/opencv-4.11.0_release_x64.props) | Historical Windows OpenCV build settings |
+```mermaid
+flowchart LR
+    N0["Input image"] --> N1
+    N1["Lane detection"] --> N2
+    N2["Visual output"]
+```
+
+## Code and reproduction
 
 ## Visual example
 
@@ -34,9 +50,8 @@ No full rebuild or fresh image-processing benchmark was performed in this pass.
 See the [GazeMouse project](https://github.com/oldprize47-SH/gaze-mouse-course-project)
 for the separate end-to-end application.
 
-## Archive policy
+## Source and credits
 
-The fork retains upstream history, source attributions and course material. The
-portfolio documentation does not assign a new licence or claim sole authorship
-of inherited code. Current checks are stated above; an untested component is not
-presented as verified.
+[Original repository](https://github.com/oldprize47/DLIP_2025) · [Portfolio home](https://github.com/oldprize47-SH)
+
+Course scaffolding, team contributions and third-party assets retain their original attribution. This documentation does not grant a new licence.
