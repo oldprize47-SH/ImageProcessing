@@ -10,6 +10,8 @@
 
 ## 한국어
 
+[코드 읽는 순서](#코드-따라-읽기)
+
 
 
 이 자료에는 2025년 영상처리 수업의 과제와 실습이 담겨 있습니다. C++/OpenCV 프로그램, 노트북, 테스트 이미지, 수업에서 제공한 보조 코드가 포함되어 있습니다.
@@ -32,11 +34,11 @@
 
 
 
-![프로젝트 목표: image-processing-labs](docs/goals/project-focus-v1.png)
+![프로젝트 목표: image-processing-labs](docs/goals/goal.png)
 
 
 
-AI로 생성한 개념도입니다. 장치의 외형, 인터페이스 배치, 예시 그래픽은 설명을 위한 표현이며, 실제 프로젝트 사진이나 측정 결과가 아닙니다.
+<sub>AI 생성 개념도</sub>
 
 
 
@@ -56,7 +58,7 @@ AI로 생성한 개념도입니다. 장치의 외형, 인터페이스 배치, �
 
 
 
-각 행은 독립적인 실습이나 처리 흐름을 설명합니다. 하나로 연결된 애플리케이션이 아닌 개별 실습 모음이므로, 관심 있는 행부터 살펴볼 수 있습니다. [SVG](docs/flowcharts/image-labs.svg)
+<sub>[SVG](docs/flowcharts/image-labs.svg)</sub>
 
 
 
@@ -128,6 +130,18 @@ AI로 생성한 개념도입니다. 장치의 외형, 인터페이스 배치, �
 
 
 
+### 코드 따라 읽기
+
+아래 순서는 파일의 역할과 연결을 이해하기 위한 안내입니다. 독립 과제나 보드별 프로그램은 한꺼번에 실행하지 않고 해당 항목의 실행 안내를 따릅니다.
+
+| 순서 | 파일 | 역할과 다음 단계 |
+|---|---|---|
+| 1 | [check_env.py](check_env.py) | Python 환경 확인 스크립트부터 읽고 설치된 영상처리 환경을 점검합니다. |
+| 2 | [Assignment/DLIP_Assignment_OpenCV_Basics](Assignment/DLIP_Assignment_OpenCV_Basics) | 기초 OpenCV 연산과 이미지 입출력부터 살펴봅니다. 각 실습은 별도 실행 프로그램입니다. |
+| 3 | [Assignment/Assignment_Line_Detection/DLIP_Assignment_21800275_SangheonPark.cpp](Assignment/Assignment_Line_Detection/DLIP_Assignment_21800275_SangheonPark.cpp) | 이미지 파일 목록에서 회색조 입력을 읽는 부분부터 차선 처리와 결과 표시까지 따라갑니다. |
+| 4 | [LAB/DLIP_LAB3](LAB/DLIP_LAB3) | 정지영상과 영상 입력용 Python 파일을 비교해 입력 반복 방식의 차이를 확인합니다. |
+| 5 | [Tutorial](Tutorial) | 필터·임계값·형태학·에지·카메라 보정 예제를 필요한 단계별로 참고합니다. |
+
 ---
 
 
@@ -135,6 +149,8 @@ AI로 생성한 개념도입니다. 장치의 외형, 인터페이스 배치, �
 <a id="english"></a>
 
 ## English
+
+[Code walkthrough](#code-walkthrough)
 
 
 
@@ -162,11 +178,11 @@ Extract useful structure from images: gear geometry, colour regions, strip shape
 
 
 
-![Project goal: image-processing-labs](docs/goals/project-focus-v1.png)
+![Project goal: image-processing-labs](docs/goals/goal.png)
 
 
 
-AI-generated concept illustration. Device appearance, interface layout and example graphics are illustrative, not project photographs or measured results.
+<sub>AI-generated concept illustration</sub>
 
 
 
@@ -186,7 +202,7 @@ The gear and strip exercises connect to visual-inspection and image-based shape-
 
 
 
-Each row describes an independent exercise or workflow. Since this is a collection of separate exercises rather than one connected application, you can start with the row that interests you. [SVG](docs/flowcharts/image-labs.svg)
+<sub>[SVG](docs/flowcharts/image-labs.svg)</sub>
 
 
 
@@ -258,3 +274,14 @@ The final [Gaze Tracking Mouse project](https://github.com/oldprize47-SH/GazeMou
 
 This assignment image shows the input used for lane detection. It is not a detected-lane result or the output of a new benchmark run.
 
+### Code walkthrough
+
+Use this order to understand each file and its connections. Independent exercises and board targets are not one executable; follow the relevant run instructions below.
+
+| Step | File | Role and next step |
+|---|---|---|
+| 1 | [check_env.py](check_env.py) | Read the Python environment-check script before preparing the image-processing environment. |
+| 2 | [Assignment/DLIP_Assignment_OpenCV_Basics](Assignment/DLIP_Assignment_OpenCV_Basics) | Begin with basic OpenCV operations and image I/O; exercises are separate programs. |
+| 3 | [Assignment/Assignment_Line_Detection/DLIP_Assignment_21800275_SangheonPark.cpp](Assignment/Assignment_Line_Detection/DLIP_Assignment_21800275_SangheonPark.cpp) | Trace the image filename list and grayscale reads through lane processing and output display. |
+| 4 | [LAB/DLIP_LAB3](LAB/DLIP_LAB3) | Compare the image and video Python versions to understand their different input loops. |
+| 5 | [Tutorial](Tutorial) | Use filtering, thresholding, morphology, edges and calibration examples as references for individual stages. |
